@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PI Atlas 2026</title>
+  <meta name="description" content="面向肾小管生理与遗传性结石病方向的海外 PI 浏览站。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="atlas-page">
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">PI Atlas 2026</p>
+        <h1>肾小管生理与遗传结石病导师地图</h1>
+        <p class="hero-text">
+          把 10 位最值得优先联系的海外老师做成一张可浏览的研究地图。
+          入口页负责筛选和比较，点开后进入单人 dossier，适合你逐个判断是否要发邮件。
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#atlas-list">开始浏览</a>
+          <a class="button button-secondary" href="https://github.com/hi-fei-cool/zhaogaga">查看源码</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-note">
+          <span>主轴 A</span>
+          <strong>肾小管生理 / 离子通道 / 节段转运</strong>
+        </div>
+        <div class="hero-note">
+          <span>主轴 B</span>
+          <strong>遗传性结石病 / 稀有病 / 转化研究</strong>
+        </div>
+        <div class="hero-note">
+          <span>补充轴</span>
+          <strong>tubuloid / organoid / culture platform</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="atlas-main" id="atlas-list">
+      <aside class="atlas-sidebar">
+        <div class="sidebar-block">
+          <p class="sidebar-label">快速筛选</p>
+          <div class="filter-group" id="priority-filters"></div>
+        </div>
+        <div class="sidebar-block">
+          <p class="sidebar-label">研究主线</p>
+          <div class="filter-group" id="track-filters"></div>
+        </div>
+        <div class="sidebar-block">
+          <p class="sidebar-label">国家</p>
+          <div class="filter-group" id="country-filters"></div>
+        </div>
+        <div class="sidebar-block">
+          <label class="sidebar-label" for="search-box">检索姓名 / 单位 / 关键词</label>
+          <input id="search-box" class="search-box" type="search" placeholder="例如 Radboud, stone, DCT">
+        </div>
+        <div class="sidebar-block sidebar-guide">
+          <p class="sidebar-label">怎么用这张图</p>
+          <ol>
+            <li>先看“最优先”那一层，锁定 6-8 位目标。</li>
+            <li>点进 dossier，看研究主轴和你该怎么切入。</li>
+            <li>最后回到 EndNote 和代表作，再决定首批发信名单。</li>
+          </ol>
+        </div>
+      </aside>
+
+      <section class="atlas-content">
+        <div class="content-header">
+          <div>
+            <p class="eyebrow">Atlas Overview</p>
+            <h2>导师总览</h2>
+          </div>
+          <p class="result-count" id="result-count">正在载入…</p>
+        </div>
+        <div class="atlas-rows" id="atlas-rows"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PI Dossier</title>
+  <meta name="description" content="海外 PI 详细介绍页。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="profile-page">
+  <div class="profile-shell" id="profile-shell">
+    <header class="profile-hero" id="profile-hero">
+      <a class="back-link" href="index.html">返回导师地图</a>
+      <div class="profile-hero-copy">
+        <p class="eyebrow" id="profile-track"></p>
+        <h1 id="profile-name">PI dossier</h1>
+        <p class="profile-headline" id="profile-headline"></p>
+        <div class="meta-line" id="profile-meta"></div>
+      </div>
+      <div class="fit-panel" id="fit-panel"></div>
+    </header>
+
+    <main class="profile-main">
+      <section class="profile-section two-column">
+        <div>
+          <p class="section-kicker">为什么值得联系</p>
+          <h2>匹配判断</h2>
+        </div>
+        <div>
+          <p class="lead" id="profile-fit-summary"></p>
+          <p id="profile-fit-detail"></p>
+        </div>
+      </section>
+
+      <section class="profile-section two-column">
+        <div>
+          <p class="section-kicker">Research Spine</p>
+          <h2>研究主轴</h2>
+        </div>
+        <div class="bullet-columns">
+          <div>
+            <h3>核心问题</h3>
+            <ul id="focus-list"></ul>
+          </div>
+          <div>
+            <h3>常见平台</h3>
+            <ul id="methods-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-section two-column">
+        <div>
+          <p class="section-kicker">Your Angle</p>
+          <h2>你联系时该怎么切入</h2>
+        </div>
+        <div>
+          <ul class="angle-list" id="angle-list"></ul>
+          <p class="caution" id="profile-caution"></p>
+        </div>
+      </section>
+
+      <section class="profile-section two-column">
+        <div>
+          <p class="section-kicker">Read First</p>
+          <h2>先读哪几篇</h2>
+        </div>
+        <div class="paper-list" id="paper-list"></div>
+      </section>
+
+      <section class="profile-section two-column">
+        <div>
+          <p class="section-kicker">Official Routes</p>
+          <h2>官方入口</h2>
+        </div>
+        <div class="links-list" id="links-list"></div>
+      </section>
+
+      <section class="profile-section two-column">
+        <div>
+          <p class="section-kicker">Decision</p>
+          <h2>一句话结论</h2>
+        </div>
+        <div>
+          <p class="lead" id="profile-decision"></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>
